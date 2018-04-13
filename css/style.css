@@ -1,0 +1,284 @@
+body {
+	background-color: #e5e5e5;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.navbar {
+	background-color: #e5e5e5;
+	height: 68px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 2px;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #000;
+	padding: 0;
+}
+
+/* TEXT STYLING */
+
+.centertext {
+	text-align: center;
+}
+
+.errortext	{
+	color: red;
+}
+
+.menytext {
+	line-height: 0.2;
+}
+
+.submit {
+	background-color: #808080;
+	border: none;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	outline:0;
+}
+
+.submitready {
+	background-color: #163ce1;
+}
+
+/* VIDEO RESPONSIVENESS */
+
+.video-container {
+	position:relative;
+	padding-bottom:41.15%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/* INPUTS*/
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #808080;
+	opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #808080;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #808080;
+}
+
+/* LINKS*/
+
+/* unvisited link */
+a:link {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/* visited link */
+a:visited {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/* mouse over link */
+a:hover {
+	color: #163ce1;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/* selected link */
+a:active {
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.embed-container {
+	position: relative;
+	padding-bottom: 44%;
+	height: 0;
+	overflow:
+	hidden;
+	max-width: 1280px;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed
+{ position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* Customize the label (the container) */
+.container {
+	display: block;
+	position: relative;
+	margin-bottom: 5px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+	position: absolute;
+	opacity: 0;
+}
+
+/* Create a custom radio button */
+.radio {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	border-radius: 50%;
+	border: 2px solid #000;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark  {
+	background-color: #808080;
+}
+.container:hover input ~ .radio {
+	background-color: #808080;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radio {
+	background-color: #163ce1;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radio:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+
+#wrapper {
+	border: 1px solid black;
+	overflow: hidden; /* add this to contain floated children */
+}
+#left {
+
+	float:left; /* add this */
+	border: 1px solid red;
+}
+#right {
+	border: 1px solid green;
+	float: right; /* add this */
+}
+
+/* MEDIAQUERYS */
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	#largeplayer {padding-left: 11%; padding-top: 1%; width: 76vw; height: 42.80vw;}
+	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#player {width: 96%; height: 39%;}
+	#next {margin-top: 1%;}
+	.font {font-family: 'PT Sans', sans-serif; font-size: 23px; font-weight: 700;}
+	.textbox {margin-left: 14%; margin-top: 0%; width: 550px;}
+	.page	{padding-top: 1%; padding-left: 6%; padding-right: 6%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
+	.spalt {padding-left: 1%; width: 330px; height: 460px; display: inline-block; float: left;}
+	.stats {width: 380px; height: 440px; display:block; float: center; padding-left: 0%;}
+	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
+	.emailwidth { width: 100%;}
+	.intro	{padding-top: 5%;}
+	.navbar	{padding-left: 40%}
+	.results {padding-left: 8.5%;}
+	.container {padding-left: 35px;}
+	.radio {height: 22px; width: 22px; border: 3px solid #000;}
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1200px) {
+	#largeplayer {padding-left: 2%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#player {width: 96%; height: 39%;}
+	#next {margin-top: 25px;}
+	.font {font-family: 'PT Sans', sans-serif; font-size: 22px; font-weight: 700;}
+	.textbox {margin-left: 14%; margin-top: 2%; width: 380px;}
+	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
+	.spalt {padding-left: 1%; width: 330px; height: 460px; display: inline-block; float: left;}
+	.stats {width: 380px; height: 440px; display:block; float: center; padding-left: 0%;}
+	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
+	.emailwidth { width: 100%;}
+	.intro	{padding-top: 5%;}
+	.navbar	{padding-left: 40%}
+	.results {padding-left: 8.5%;}
+	.container {padding-left: 35px;}
+	.radio {height: 22px; width: 22px; border: 3px solid #000;}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#largeplayer {padding-left: 1%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#player {width: 96%; height: 39%;}
+	#next {margin-top: 45px;}
+	.font {font-family: 'PT Sans', sans-serif; font-size: 22px; font-weight: 700;}
+	.textbox {margin-left: 5%; margin-top: 0%; width: 60%;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
+	.spalt {padding-left: 1%; width: 330px; height: 460px; display: inline-block; float: left;}
+	.stats {width: 380px; height: 440px; display:block; float: center; padding-left: 0%;}
+	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
+	.emailwidth { width: 100%;}
+	.intro	{padding-top: 5%;}
+	.navbar	{padding-left: 40%}
+	.results {padding-left: 8.5%;}
+	.container {padding-left: 35px;}
+	.radio {height: 22px; width: 22px; border: 3px solid #000;}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	#largeplayer {padding-left: 1%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#player {width: 96%; height: 39%;}
+	#next {margin-top: 4%;}
+	.font {font-family: 'PT Sans', sans-serif; font-size: 16px; font-weight: 700;}
+	.textbox {margin-left: 0%; margin-top: 0%; width: 75%;}
+	.page	{padding-top: 1%; padding-left: 3%; padding-right: 3%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
+	.spalt {padding-left: 1%; width: 330px; height: 460px; display: inline-block; float: left;}
+	.stats {width: 380px; height: 440px; display:block; float: center; padding-left: 0%;}
+	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
+	.emailwidth { width: 100%;}
+	.intro	{padding-top: 5%;}
+	.navbar	{padding-left: 40%}
+	.results {padding-left: 8.5%;}
+	.container {padding-left: 30px;}
+	.radio {height: 18px; width: 18px; border: 2px solid #000;}
+}

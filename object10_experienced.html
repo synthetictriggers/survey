@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/pause.js"></script>
+    <script src="js/hideshow.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <!--VIDEO LINK-->
+    <div><iframe
+  id="largeplayer" type="text/html" width="640" height="390" frameborder="0"
+  src="https://www.youtube.com/embed/qXzy2kS_dQk?enablejsapi=1;rel=0&amp;showinfo=0;autoplay=1;controls=0">
+</iframe></div>
+
+  <!--REDIRECTION & SPREADSHEET URL-->
+  <div class="page textbox">
+    <div class="redirectAnchor" style="display:none"
+    redirectUrl="finished.html"
+    spreadsheetURL="https://script.google.com/macros/s/AKfycbxF_J9qexpv4YuNDRAe1raf94M1YK_g1AuTF-69iJfBTHyIaYcg/exec">
+  </div>
+
+<!--QUESTIONS-->
+<div>
+  <form name="survey" method="GET" action="#">
+    <input name="time" type="hidden" value="" id="timerfield">
+    <div class="formsection missing" id="clearFrag">
+      <p class="font errorenabler">Did this object give you tingles?</p>
+      <label class="container font">
+        <input type="radio" name="tingles?" value="yes" onclick="yes()"> Yes<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="tingles?" value="no" onclick="no()"> No<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="tingles?" value="don't know" onclick="no()"> I don't know<br>
+        <span class="radio"></span>
+      </label>
+    </div>
+    <br>
+
+    <div display="none" style="display: none" id="hideshow">
+      <div class="formsection missing">
+        <p class="font errorenabler">In terms of strength, how would you rate the tingles?</p>
+        <label class="container font">
+          <input type="radio" name="strength" value="extremely weak"> Extremely weak
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="very weak"> Very weak
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="weak"> Weak
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="moderate"> Moderate
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="strong"> Strong
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="very strong"> Very strong
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="strength" value="extremely strong"> Extremely strong
+          <span class="radio"></span>
+        </label>
+      </div>
+      <br>
+      <div class="formsection missing">
+        <p class="font errorenabler">In terms of pleasantness, how would you rate the tingles?</p>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="extremely unpleasant"> Extremely unpleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="very unpleasant"> Very unpleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="slightly unpleasant"> Slightly unpleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="neither unpleasant nor pleasant"> Neither unpleasant nor pleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="slightly pleasant"> Slightly pleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="very pleasant"> Very pleasant<br>
+          <span class="radio"></span>
+        </label>
+        <label class="container font">
+          <input type="radio" name="pleasantness" value="extremely pleasant"> Extremely pleasant<br>
+          <span class="radio"></span>
+        </label>
+        <br>
+      </div>
+    </div>
+
+    <div class="formsection missing">
+      <p class="font errorenabler">In terms of relaxation, how would you rate your <u>overall experience</u> of this object?</p>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="extremely unrelaxing"> Extremely unrelaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="very unrelaxing"> Very unrelaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="slightly unrelaxing"> Slightly unrelaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="neither unrelaxing nor relaxing"> Neither unrelaxing nor relaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="slightly relaxing"> Slightly relaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="very relaxing"> Very relaxing<br>
+        <span class="radio"></span>
+      </label>
+      <label class="container font">
+        <input type="radio" name="relaxation" value="extremely relaxing"> Extremely relaxing<br>
+        <span class="radio"></span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!--NEXT-->
+<div class="page textbox">
+  <div id="errormessage" style="display:none;">
+    <p class="font errortext">Please answer all the questions</p>
+  </div>
+  <button id="next" class="submit font">Finish!</button>
+</form>
+</div>
+<br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main_intro.js"></script>
+  </head>
+
+  <div class="page font textbox intro">
+
+        SYNTHETIC TINGLES
+        <br><br>
+        In this survey you will experience ten different animations.
+        The purpose is to see if they can trigger ASMR-tingles.
+        <br>
+        <br>
+        Watch each animation for as long as you like, then answer the questions below.
+        You are strongly recommended to use headphones and to seat comfortably in a calm and quiet environment.
+
+      <div class="formsection missing">
+        <p class="font errorenabler">  Do you have previous ASMR experience?</p>
+
+
+      <form name="experience">
+        <label class="container font">
+          <input class="experience" onchange="this.setCustomValidity(validity.valueMissing ? 'Select your experience level' : '');"
+          id="experience" required name="experience" type="radio" name="experience" value="1">Yes<br>
+          <span class="radio"></span>
+        </label>
+
+        <label class="container font">
+          <input class="experience" onchange="this.setCustomValidity(validity.valueMissing ? 'Select your experience level' : '');"
+          id="experience" required name="experience" type="radio" name="experience" value="2">No<br>
+          <span class="radio"></span>
+        </label>
+
+        <hr style="height:18px; visibility:hidden;">
+
+        <button id="next" class="font submit">Begin</button>
+
+      </form>
+
+
+      <br><br><br><br>
+    </div>
+  </div>
+</body>
+</html>
