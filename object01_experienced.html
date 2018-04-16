@@ -2,7 +2,7 @@
 <html>
 <body>
   <head>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.youtube.com/iframe_api"></script>
@@ -30,7 +30,7 @@
   <form name="survey" method="GET" action="#">
     <input name="time" type="hidden" value="" id="timerfield">
     <div class="formsection missing" id="clearFrag">
-      <p class="font errorenabler">Did this object give you tingles?</p>
+      <p class="font errorenabler"><b>Did this object give you tingles?</b></p>
       <label class="container font">
         <input type="radio" name="tingles?" value="yes" onclick="yes()"> Yes<br>
         <span class="radio"></span>
@@ -48,7 +48,7 @@
 
     <div display="none" style="display: none" id="hideshow">
       <div class="formsection missing">
-        <p class="font errorenabler">In terms of strength, how would you rate the tingles?</p>
+        <p class="font errorenabler"><b>In terms of strength, how would you rate the tingles?</b></p>
         <label class="container font">
           <input type="radio" name="strength" value="extremely weak"> Extremely weak
           <span class="radio"></span>
@@ -80,7 +80,7 @@
       </div>
       <br>
       <div class="formsection missing">
-        <p class="font errorenabler">In terms of pleasantness, how would you rate the tingles?</p>
+        <p class="font errorenabler"><b>In terms of pleasantness, how would you rate the tingles?</b></p>
         <label class="container font">
           <input type="radio" name="pleasantness" value="extremely unpleasant"> Extremely unpleasant<br>
           <span class="radio"></span>
@@ -114,7 +114,7 @@
     </div>
 
     <div class="formsection missing">
-      <p class="font errorenabler">In terms of relaxation, how would you rate your <u>overall experience</u> of this object?</p>
+      <p class="font errorenabler"><b>In terms of relaxation, how would you rate your <u>overall experience</u> of this object?</b></p>
       <label class="container font">
         <input type="radio" name="relaxation" value="extremely unrelaxing"> Extremely unrelaxing<br>
         <span class="radio"></span>
@@ -150,9 +150,9 @@
 <!--NEXT-->
 <div class="page textbox">
   <div id="errormessage" style="display:none;">
-    <p class="font errortext">Please answer all the questions</p>
+    <p class="font errortext"><b>Please answer all the questions</b></p>
   </div>
-  <button id="next" class="submit font">Next (2/10)</button>
+  <button id="next" class="submit font"><b>Next (2/10)</b></button>
 </form>
 </div>
 <br><br><br>
