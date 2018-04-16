@@ -239,7 +239,7 @@ a:active {
 	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 25px;}
-	.font {font-family: 'Zilla Slab', serif; font-size: 22px;}
+	.font {font-family: 'Zilla Slab', serif; font-size: 24px;}
 	.textbox {margin-left: 14%; margin-top: 2%; width: 380px;}
 	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%;}
 	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
@@ -251,7 +251,7 @@ a:active {
 	.navbar	{padding-left: 40%}
 	.results {padding-left: 8.5%;}
 	.container {padding-left: 35px;}
-	.radio {height: 22px; width: 22px; border: 3px solid #000;}
+	.radio {height: 24px; width: 24px; border: 2px solid #000;}
 }
 
 /* Landscape phone to portrait tablet */
