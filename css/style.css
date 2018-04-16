@@ -6,6 +6,18 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+#gradient {
+    height: 100vh;
+    background: #e5e5e5; /* For browsers that do not support gradients */
+    background: linear-gradient(#b8ceff, #e5e5e5); /* Standard syntax (must be last) */
+}
+
+#inversegradient {
+    height: 100vh;
+    background: #e5e5e5; /* For browsers that do not support gradients */
+    background: linear-gradient(#e5e5e5, #b8ceff); /* Standard syntax (must be last) */
+}
+
 .navbar {
 	background-color: #e5e5e5;
 	height: 68px;
@@ -44,10 +56,12 @@ hr {
 	display: inline-block;
 	cursor: pointer;
 	outline:0;
+	font-weight: 700;
 }
 
 .submitready {
 	background-color: #163ce1;
+	font-weight: 700;
 }
 
 /* VIDEO RESPONSIVENESS */
@@ -204,12 +218,12 @@ a:active {
 	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1%;}
-	.font {font-family: 'PT Sans', sans-serif; font-size: 23px; font-weight: 700;}
+	.font {font-family: 'Zilla Slab', serif; font-size: 23px;}
 	.textbox {margin-left: 14%; margin-top: 0%; width: 550px;}
 	.page	{padding-top: 1%; padding-left: 6%; padding-right: 6%;}
 	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
 	.spalt {padding-left: 1%; width: 330px; height: 460px; display: inline-block; float: left;}
-	.stats {width: 380px; height: 440px; display:block; float: center; padding-left: 0%;}
+	.stats {width: 380px; height: 440px; padding-left: 0%;}
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
 	.intro	{padding-top: 5%;}
@@ -217,7 +231,6 @@ a:active {
 	.results {padding-left: 8.5%;}
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
-
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -235,7 +248,7 @@ a:active {
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
 	.intro	{padding-top: 5%;}
-	.navbar	{padding-left: 24%}
+	.navbar	{padding-left: 40%}
 	.results {padding-left: 8.5%;}
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
@@ -256,7 +269,7 @@ a:active {
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
 	.intro	{padding-top: 5%;}
-	.navbar	{padding-left: 24%}
+	.navbar	{padding-left: 40%}
 	.results {padding-left: 8.5%;}
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
@@ -277,7 +290,7 @@ a:active {
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
 	.intro	{padding-top: 5%;}
-	.navbar	{padding-left: 12%}
+	.navbar	{padding-left: 40%}
 	.results {padding-left: 8.5%;}
 	.container {padding-left: 30px;}
 	.radio {height: 18px; width: 18px; border: 2px solid #000;}
