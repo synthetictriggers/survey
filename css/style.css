@@ -11,12 +11,13 @@ input:-webkit-autofill {
 #gradient {
 	background: #e5e5e5; /* For browsers that do not support gradients */
 	background: linear-gradient(#b8ceff, #e5e5e5); /* Standard syntax (must be last) */
+height: 100vh;
 }
 
 #inversegradient {
 	background: #e5e5e5; /* For browsers that do not support gradients */
 	background: linear-gradient(#e5e5e5 255px, #b8ceff); /* Standard syntax (must be last) */
-height: 100vw;
+height: 100vh;
 }
 
 .navbar {
@@ -216,7 +217,7 @@ a:active {
 
 /* Large desktop */
 @media (min-width: 1200px) {
-	#largeplayer {padding-left: 11%; padding-top: 1%; width: 76vw; height: 42.80vw;}
+	#largeplayer {padding-left: 11%; padding-top: 0%; width: 76vw; height: 42.80vw;}
 	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
@@ -239,7 +240,7 @@ a:active {
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1200px) {
-	#largeplayer {padding-left: 2%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#largeplayer {padding-left: 2%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
 	#cinemaPlayer {width: 98vw; height: 41.9vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 0px;}
@@ -263,7 +264,7 @@ a:active {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-	#largeplayer {padding-left: 1%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
 	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 45px;}
@@ -286,7 +287,7 @@ a:active {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	#largeplayer {padding-left: 1%; padding-top: 1%; width: 94.5vw; height: 53.30vw;}
+	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
 	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
