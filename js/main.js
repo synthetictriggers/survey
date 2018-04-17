@@ -99,7 +99,7 @@ jQuery(document).ready(function($){
 		setTimeout(function(){
 			var url = $('body').find('.redirectAnchor').attr('redirectUrl')
 			window.location.href = (url);
-		}, 500);
+		}, 2000);
 		var scriptURL = $('body').find('.redirectAnchor').attr('spreadsheetURL')
 		var payload = document.forms['survey'];
 		if (true) {
