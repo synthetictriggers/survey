@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body id="gradient">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117609933-1"></script>
@@ -13,36 +13,48 @@
 </script>
     <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mediaquerys.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main_intro.js"></script>
   </head>
-    <!--NAVBAR BEGINS-->
-    <div class="navbar font">
-      <a href="summaryvideo.html">SUMMARY VIDEO</a> &nbsp;&nbsp;
-      <a href="results.html">RESULTS</a> &nbsp;&nbsp;
-      <a href="index.html"><u class="underline">ABOUT</u></a>
-    </div><br><br><br>
-      <!--NAVBAR ENDS-->
+  <div class="page font textbox intro">
+    <img style="display: block; margin-left: auto;  margin-right: auto;" width="56%" height="56%" src="symbol.gif"><br>
+        <b>SYNTHETIC TRIGGERS</b>
+        <br><br>
+        In this survey you will evaluate your experience of ten animated 3D objects.
+        The purpose is to see if they can trigger ASMR-tingles.
+        <br>
+        <br>
+        Watch each one for as long as you like and fill out the evaluation below each video.
+        You are strongly recommended to use headphones and to seat comfortably in a calm and quiet environment.
+        It will take about ten minutes to complete it.
 
-      <div class="page font textbox intro">
-
-            SYNTHETIC TINGLES
-            <br><br>
-            Is it possible to get ASMR-tingles from videos without the presence of a human being?
-            Help me explore this question by testing my digitally animated ASMR-material.
-            <br><br>
-            Feel free to contact me at <U>nilsmarcusnystrand@gmail.com</U>
-
-            <br><br>
-            Interested in the raw data? It is [here]
-
-            <br><br>
-            Project sponsors:  <br><br>
+      <div class="formsection missing">
+        <p class="font errorenabler">  <b>Do you have previous ASMR experience?</b></p>
 
 
-            Huge thanks to Philip Åkerfeldt, Jesper Jansson and Jonas Johansson for help with code-related stuff!
+      <form name="experience">
+        <label class="container font">
+          <input class="experience" onchange="this.setCustomValidity(validity.valueMissing ? 'Select your experience level' : '');"
+          id="experience" required name="experience" type="radio" name="experience" value="1">Yes<br>
+          <span class="radio"></span>
+        </label>
 
-        </div>
-      </div>
-    </body>
-    </html>
+        <label class="container font">
+          <input class="experience" onchange="this.setCustomValidity(validity.valueMissing ? 'Select your experience level' : '');"
+          id="experience" required name="experience" type="radio" name="experience" value="2">No<br>
+          <span class="radio"></span>
+        </label>
+
+        <hr style="height:18px; visibility:hidden;">
+
+        <button id="next" class="font submit"><b>Begin</b></button>
+
+      </form>
+
+
+      <br><br><br><br>
+    </div>
+  </div>
+</body>
+</html>
