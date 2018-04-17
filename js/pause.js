@@ -1,5 +1,5 @@
   //play when video is visible
-  var videos = document.getElementsByTagName("iframe"), fraction = 0.5;
+  var videos = document.getElementsByTagName("iframe"), fraction = 0.7;
   var counting = true;
 
   function checkScroll() {

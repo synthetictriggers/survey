@@ -104,7 +104,7 @@ jQuery(document).ready(function($){
 		else
 		if(document.experience.experience[1].checked == true)
 		{
-			window.location.href = 'object01_experienced.html';
+			window.location.href = 'object01_inexperienced.html';
 			console.log("NOT EXPERIENCED")
 		}
 		return true;
