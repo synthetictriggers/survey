@@ -8,6 +8,13 @@ input:-webkit-autofill {
 	-webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 #gradient {
 	background: #e5e5e5; /* For browsers that do not support gradients */
 	background: linear-gradient(#b8ceff, #e5e5e5); /* Standard syntax (must be last) */
