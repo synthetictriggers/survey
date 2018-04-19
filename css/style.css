@@ -1,5 +1,5 @@
 body {
-	background-color: #e5e5e5;
+	background-color: #d6dbe5;
 	margin:0;
 	padding:0;
 }
@@ -16,19 +16,19 @@ button:focus {
 }
 
 #gradient {
-	background: #e5e5e5; /* For browsers that do not support gradients */
-	background: linear-gradient(#b8ceff, #e5e5e5); /* Standard syntax (must be last) */
+	background: #d6dbe5; /* For browsers that do not support gradients */
+	background: linear-gradient(#d6dbe5, #eff4f7); /* Standard syntax (must be last) */
 height: 100vh;
 }
 
 #inversegradient {
-	background: #e5e5e5; /* For browsers that do not support gradients */
-	background: linear-gradient(#e5e5e5 255px, #b8ceff); /* Standard syntax (must be last) */
+	background: #d6dbe5; /* For browsers that do not support gradients */
+	background: linear-gradient(#eff4f7 255px, #d6dbe5); /* Standard syntax (must be last) */
 height: 100vh;
 }
 
 .navbar {
-	background-color: #e5e5e5;
+	background-color: #d6dbe5;
 	height: 60px;
 	position: fixed;
 	top: 0;
