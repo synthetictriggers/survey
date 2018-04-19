@@ -18,7 +18,7 @@ button:focus {
 #gradient {
 	background: #e5e5e5; /* For browsers that do not support gradients */
 	background: linear-gradient(#b8ceff, #e5e5e5); /* Standard syntax (must be last) */
-
+height: 100vh;
 }
 
 #inversegradient {
