@@ -58,7 +58,7 @@ hr {
 }
 
 .submit {
-	background-color: #808080;
+	background-color: #9ba0a6;
 	border: none;
 	padding: 15px 32px;
 	text-align: center;
@@ -95,16 +95,16 @@ hr {
 /* INPUTS*/
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-	color: #808080;
+	color: #9ba0a6;
 	opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: #808080;
+	color: #9ba0a6;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-	color: #808080;
+	color: #9ba0a6;
 }
 
 /* LINKS*/
@@ -182,12 +182,8 @@ a:active {
 	border: 2px solid #000;
 }
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark  {
-	background-color: #808080;
-}
 .container:hover input ~ .radio {
-	background-color: #808080;
+	background-color: #9ba0a6;
 }
 
 /* When the radio button is checked, add a blue background */
