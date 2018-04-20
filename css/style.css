@@ -306,7 +306,7 @@ a:active {
 	.navbar	{padding-top: 2vh; display: inline-block; float: none; vertical-align: top;  text-align: center; height: 45px;}
 	.results {padding-left: 3.5%;}
 	.container {padding-left: 30px;}
-	.radio {height: 22px; width: 22px; border: 3px solid #000; top: 1px;}
+	.radio {height: 21px; width: 21px; border: 2px solid #000; top: 1px;}
 	.resultspacing {margin-bottom: 550px;}
 	.spacing	{height:8px; visibility:hidden;}
 }
