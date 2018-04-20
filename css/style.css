@@ -318,7 +318,7 @@ a:active {
 }
 
 @media (orientation: landscape) and (max-width: 767px) {
-	.textbox {margin-left: 8%; margin-top: 5%; width: 530px;}
+	.textbox {margin-left: 8%; margin-top: 5%; width: 79%;}
 	.page	{padding-top: 1%; padding-left: 3%; padding-right: 3%;}
 	#next {margin-top: 0px;}
 }
