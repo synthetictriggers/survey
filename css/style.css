@@ -107,35 +107,10 @@ hr {
 	color: #9ba0a6;
 }
 
-/* LINKS*/
-
-/* unvisited link */
-a:link {
-	color: black;
-	text-decoration: none;
-	display: inline-block;
-}
-
-/* visited link */
-a:visited {
-	color: black;
-	text-decoration: none;
-	display: inline-block;
-}
-
-/* mouse over link */
-a:hover {
-	color: #163ce1;
-	text-decoration: none;
-	display: inline-block;
-}
-
-/* selected link */
-a:active {
-	color: black;
-	text-decoration: none;
-	display: inline-block;
-}
+a:link {color: black; text-decoration: none; display: inline-block;}
+a:visited {color: black; text-decoration: none; display: inline-block;}
+a:hover {color: #163ce1; text-decoration: none; display: inline-block;}
+a:active {color: black; text-decoration: none; display: inline-block;}
 
 .embed-container {
 	position: relative;
@@ -237,7 +212,8 @@ a:active {
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
 	.resultspacing {margin-bottom: 550px;}
-	.spacing	{height:28px; visibility:hidden;}
+	.spacing	{height:6px; visibility:hidden;}
+	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -259,7 +235,8 @@ a:active {
 	.container {padding-left: 35px;}
 	.radio {height: 25px; width: 25px; border: 3px solid #000;}
 	.resultspacing {margin-bottom: 1000px;}
-	.spacing	{height:28px; visibility:hidden;}
+	.spacing	{height:6px; visibility:hidden;}
+	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
 }
 
 @media (max-width: 767px) {
@@ -280,7 +257,8 @@ a:active {
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
 	.resultspacing {margin-bottom: 550px;}
-	.spacing	{height:28px; visibility:hidden;}
+	.spacing	{height:6px; visibility:hidden;}
+	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
 }
 
 /* Landscape phones and down */
@@ -302,5 +280,6 @@ a:active {
 	.container {padding-left: 30px;}
 	.radio {height: 21px; width: 21px; border: 2px solid #000; top: 1px;}
 	.resultspacing {margin-bottom: 550px;}
-	.spacing	{height:8px; visibility:hidden;}
+	.spacing	{height:6px; visibility:hidden;}
+	.rubrik	{font-size: 47px; line-height: 45px; font-weight: bold; position: relative; bottom: 20px;}
 }
