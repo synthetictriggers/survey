@@ -1,6 +1,20 @@
   //play when video is visible
-  var videos = document.getElementsByTagName("iframe"), fraction = 0.7;
+  var videos = document.getElementsByTagName("iframe"),fraction = x;
   var counting = true;
+
+  function variableFraction(x) {
+      if (x.matches) { // If media query matches
+          fraction = 0.4;
+          //console.log("Fraction set for smartphones")
+      } else {
+          fraction = 0.9;
+          //console.log("Fraction set for desktop and iPad")
+      }
+  }
+
+  var x = window.matchMedia("(max-width: 420px)")
+  variableFraction(x) // Call listener function at run time
+  x.addListener(variableFraction) // Attach listener function on state changes
 
   function checkScroll() {
     for(var i = 0; i < videos.length; i++) {
