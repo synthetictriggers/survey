@@ -15,28 +15,6 @@ button:focus {
     outline: none;
 }
 
-#gradient {
-	background: #d6dbe5; /* For browsers that do not support gradients */
-	background: linear-gradient(#d6dbe5, #eff4f7); /* Standard syntax (must be last) */
-height: 100vh;
-}
-
-#inversegradient {
-	background: #d6dbe5; /* For browsers that do not support gradients */
-	background: linear-gradient(#eff4f7 255px, #d6dbe5); /* Standard syntax (must be last) */
-height: 100vh;
-}
-
-.navbar {
-	background-color: #d6dbe5;
-	height: 60px;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	padding-top: 2px;
-	font-weight: bold;
-}
-
 hr {
 	border: 0;
 	border-top: 1px solid #000;
@@ -105,6 +83,10 @@ hr {
 
 ::-ms-input-placeholder { /* Microsoft Edge */
 	color: #9ba0a6;
+}
+
+.currentLink {
+   color: #163ce1;
 }
 
 a:link {color: black; text-decoration: none; display: inline-block;}
@@ -176,7 +158,6 @@ a:active {color: black; text-decoration: none; display: inline-block;}
 	background: white;
 }
 
-
 #wrapper {
 	border: 1px solid black;
 	overflow: hidden; /* add this to contain floated children */
@@ -191,95 +172,129 @@ a:active {color: black; text-decoration: none; display: inline-block;}
 	float: right; /* add this */
 }
 
+.navbar {
+	background-color: #d6dbe5;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	font-weight: bold;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-top: 9px;
+	display: block;
+}
+
+.navbar a	{
+		display: inline-block;
+
+		padding-right: 2px;
+	}
+
+.navbar .menu-container {
+	width: auto;
+	height: 100%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menuwrapper	{
+	display: table;
+	width: 400px;
+	margin: 0 auto;
+
+}
+
+.spalt {max-width: 330px; width: 100%; height: 100%; display: inline-block; }
+.stats {max-width: 380px; width: 100%; height: 380px; display:block; padding-left: 0%; padding-right: 0%;}
+.resultspacing {margin: 0 auto; height: 100%; width: auto; display: block; margin-bottom: 100px;}
+
+.line	{color: black;
+background-color: black;
+height: 5px;}
+
 /* MEDIAQUERYS */
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
 	#largeplayer {padding-left: 11%; padding-top: 0%; width: 76vw; height: 42.80vw;}
-	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#cinemaPlayer {width: 100%; height: 100%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 23px;}
-	.textbox {margin-left: 27%; margin-right: 35%; margin-top: 1.5%;}
-	.page	{padding-top: 1%; padding-left: 6%; padding-right: 6%;}
-	.underline {line-height: 26px; border-bottom: 6px solid black; text-decoration: none; display: block; list-style-type: none;}
-	.spalt {padding-left: 1%; width: 330px; height: 430px; display: inline-block; float: left;}
-	.stats {width: 380px; height: 380px; padding-left: 0%;}
+	.textbox {margin-left: 31%; margin-right: 31%; margin-top: 3%;}
+	.underline {line-height: 26px; border-bottom: 6px solid black; text-decoration: none; display: block; list-style-type: none; padding-top: 6px;}
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
-	.navbar	{padding-top: 2vh; display: inline-block; float: none; vertical-align: top;  text-align: center;}
-	.results {padding-left: 8.5%;}
+	.results {width: 100%; margin: 0 auto; height: 100%; display: block; text-align: center;}
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
-	.resultspacing {margin-bottom: 550px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 1200px) {
 	#largeplayer {padding-left: 2%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
-	#cinemaPlayer {width: 98vw; height: 41.9vw;}
+	#cinemaPlayer {width: 100%; height: 95%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 0px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 25px;}
 	.textbox {margin-left: 16%; margin-right: 16%; margin-top: 4%;}
-	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%;}
-	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
-	.spalt {padding-left: 1%; width: 330px; height: 430px; display: inline-block; float: left;}
-	.stats {width: 380px; height: 380px; display:block; float: center; padding-left: 0%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none; padding-top: 6px;}
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth {width: 100%;}
-	.navbar	{padding-top: 2vh; display: inline-block; float: none; vertical-align: top;  text-align: center;}
-	.results {padding-left: 4.5%;}
+	.results {width: 100%; margin: 0 auto; text-align: center;}
 	.container {padding-left: 35px;}
 	.radio {height: 25px; width: 25px; border: 3px solid #000;}
-	.resultspacing {margin-bottom: 1000px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
+	.menuwrapper	{width: 60%;}
+	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%; margin-top: 80px;}
+	.resultspacing {margin-bottom: 40px;}
 }
 
-@media (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) {
 	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
-	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#cinemaPlayer {width: 100%; height: 95%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 45px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 22px;}
 	.textbox {margin-left: 9%; margin-right: 9%; margin-top: 6%;}
-	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%;}
-	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none;}
-	.spalt {padding-left: 1%; width: 330px; height: 430px; display: inline-block; float: left;}
-	.stats {width: 380px; height: 380px; display:block; float: center; padding-left: 0%;}
+	.underline {line-height: 26px; border-bottom: 7px solid black; text-decoration: none; display: block; list-style-type: none; padding-top: 6px;}
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
-	.navbar	{padding-top: 2vh; display: inline-block; float: none; vertical-align: top;  text-align: center;}
-	.results {padding-left: 8.5%;}
+	.results {width: 100%; margin: 0 auto; text-align: center;}
 	.container {padding-left: 35px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
-	.resultspacing {margin-bottom: 550px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
+	.menuwrapper	{width: 100%;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
+	.resultspacing {margin-bottom: 40px;}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
-	#cinemaPlayer {width: 85.5vw; height: 36.42vw;}
+	#cinemaPlayer {width: 100%; height: 86%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 20px;}
 	.textbox {margin-left: 2.5%; margin-right: 2.5%; margin-top: 4%;}
-	.page	{padding-top: 1%; padding-left: 3%; padding-right: 3%;}
-	.underline {line-height: 23px; border-bottom: 6px solid black; text-decoration: none; display: block; list-style-type: none;}
-	.spalt {padding-left: 1%; width: 330px; height: 430px; display: inline-block; float: left;}
-	.stats {width: 380px; height: 380px; display:block; float: center; padding-left: 0%;}
+	.underline {line-height: 23px; border-bottom: 6px solid black; text-decoration: none; display: block; list-style-type: none; padding-top: 6px;}
 	.email {height: 54px; padding: 12px; box-sizing: border-box; border: 3px solid black; background-color: inherit;}
 	.emailwidth { width: 100%;}
-	.navbar	{padding-top: 2vh; display: inline-block; float: none; vertical-align: top;  text-align: center; height: 45px;}
-	.results {padding-left: 3.5%;}
+	.results {width: 100%; margin: 0 auto; height: 100%; display: block; text-align: center;}
 	.container {padding-left: 30px;}
 	.radio {height: 21px; width: 21px; border: 2px solid #000; top: 1px;}
-	.resultspacing {margin-bottom: 550px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 47px; line-height: 45px; font-weight: bold; position: relative; bottom: 20px;}
+	.menuwrapper	{width: 100%;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
+	.resultspacing {margin-bottom: 40px;}
 }
