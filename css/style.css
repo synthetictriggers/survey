@@ -221,7 +221,7 @@ height: 5px;}
 /* Large desktop */
 @media (min-width: 1200px) {
 	#largeplayer {padding-left: 11%; padding-top: 0%; width: 76vw; height: 42.80vw;}
-	#cinemaPlayer {width: 100%; height: 100%;}
+	#cinemaPlayer {width: 100%; height: 94%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 23px;}
