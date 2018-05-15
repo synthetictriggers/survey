@@ -59,12 +59,15 @@ hr {
 	padding-bottom:41.15%;
 	padding-top:30px;
 	height:0;
+	bottom: -50px;
 	overflow:hidden;
+	margin-top: -50px;
+	margin-bottom: 100px;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
 	position:absolute;
-	top:0;
+	top:0px;
 	left:0;
 	width:100%;
 	height:100%;
@@ -209,7 +212,7 @@ a:active {color: black; text-decoration: none; display: inline-block;}
 
 .spalt {max-width: 330px; width: 100%; height: 100%; display: inline-block; }
 .stats {max-width: 380px; width: 100%; height: 380px; display:block; padding-left: 0%; padding-right: 0%;}
-.resultspacing {margin: 0 auto; height: 100%; width: auto; display: block; margin-bottom: 100px;}
+.resultspacing {margin: 0 auto; height: 100%; width: auto; display: block; margin-bottom: 60px;}
 
 .line	{color: black;
 background-color: black;
@@ -221,7 +224,7 @@ height: 5px;}
 /* Large desktop */
 @media (min-width: 1200px) {
 	#largeplayer {padding-left: 11%; padding-top: 0%; width: 76vw; height: 42.80vw;}
-	#cinemaPlayer {width: 100%; height: 94%;}
+	#cinemaPlayer {width: 100%; height: 99.5%;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 23px;}
@@ -234,7 +237,7 @@ height: 5px;}
 	.radio {height: 22px; width: 22px; border: 3px solid #000;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
-	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 40px;}
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -254,13 +257,17 @@ height: 5px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
 	.menuwrapper	{width: 60%;}
-	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%; margin-top: 80px;}
+	.page	{padding-top: 1%; padding-left: 2%; padding-right: 2%; margin-top: 40px;}
 	.resultspacing {margin-bottom: 40px;}
+	.video-container {
+		bottom: -80px;
+		margin-top: -80px;
+	}
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
 	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
-	#cinemaPlayer {width: 100%; height: 95%;}
+	#cinemaPlayer {width: 100%; height: 95%; margin-top: 35px;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 45px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 22px;}
@@ -274,14 +281,19 @@ height: 5px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 60px; line-height: 56px; font-weight: bold; position: relative; bottom: 20px;}
 	.menuwrapper	{width: 100%;}
-	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 40px;}
 	.resultspacing {margin-bottom: 40px;}
+	.video-container {
+		bottom: -60px;
+		margin-top: -90px;
+		padding-bottom:44.15%;
+	}
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
 	#largeplayer {padding-left: 1%; padding-top: 0%; width: 94.5vw; height: 53.30vw;}
-	#cinemaPlayer {width: 100%; height: 86%;}
+	#cinemaPlayer {width: 100%; height: 86%; margin-top: 35px;}
 	#player {width: 96%; height: 39%;}
 	#next {margin-top: 1px;}
 	.font {font-family: 'Zilla Slab', serif; font-size: 20px;}
@@ -295,6 +307,11 @@ height: 5px;}
 	.spacing	{height:6px; visibility:hidden;}
 	.rubrik	{font-size: 47px; line-height: 45px; font-weight: bold; position: relative; bottom: 20px;}
 	.menuwrapper	{width: 100%;}
-	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 80px;}
+	.page	{padding-top: 1%; padding-left: 1%; padding-right: 1%; margin-top: 40px;}
 	.resultspacing {margin-bottom: 40px;}
+	.video-container {
+		bottom: -60px;
+		margin-top: -90px;
+		padding-bottom:44.15%;
+	}
 }
